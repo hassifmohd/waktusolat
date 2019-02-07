@@ -4,9 +4,9 @@ import Homepage from './views/Homepage';
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div>
         <Homepage />
-      </React.Fragment>
+      </div>
     );
   }
 }
