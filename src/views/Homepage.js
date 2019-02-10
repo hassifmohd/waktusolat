@@ -16,7 +16,7 @@ class Homepage extends Component {
                         <Col xs="1"></Col>
                         <Col xs="10">
                             <div className="putmiddle">
-                                <h5>Waktu Solat Malaysia (JAKIM)</h5>
+                                <h5></h5>
                             </div>
 
                             <div>
@@ -68,7 +68,6 @@ class Homepage extends Component {
                             </Table>
 
                             <div className="putmiddle">
-                                <Button color="primary">Tukar Kawasan</Button>{' '}
                                 <Button color="primary">Refresh</Button>
                             </div>
                         </Col>
