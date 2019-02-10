@@ -6,6 +6,12 @@ class Homepage extends Component {
     constructor(props) {
         super(props);
         this.state = {};
+
+        this.refreshEvent = this.refreshEvent.bind(this);
+    }
+
+    refreshEvent = (event) => {
+        alert('REFRESH EXECUTED');
     }
 
     render() {
@@ -68,7 +74,7 @@ class Homepage extends Component {
                             </Table>
 
                             <div className="putmiddle">
-                                <Button color="primary">Refresh</Button>
+                                <Button color="primary" onClick={this.refreshEvent}>Refresh</Button>
                             </div>
                         </Col>
                         <Col xs="1"></Col>
