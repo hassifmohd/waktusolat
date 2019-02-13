@@ -19,6 +19,27 @@ class Settings extends Component {
                             <div>
                                 <Form>
                                     <FormGroup row>
+                                        <Label for="state" sm={4}>Negeri</Label>
+                                        <Col sm={8}>
+                                            <Input type="select" name="state" id="state">
+                                                <option value="JHR">Johor</option>
+                                                <option value="KDH">Kedah</option>
+                                                <option value="KTN">Kelantan</option>
+                                                <option value="KTN">Melaka</option>
+                                                <option value="NGS">Negeri Sembilan</option>
+                                                <option value="PHG">Pahang</option>
+                                                <option value="PLS">Perlis</option>
+                                                <option value="PNG">Pulau Pinang</option>
+                                                <option value="PRK">Perak</option>
+                                                <option value="SBH">Sabah</option>
+                                                <option value="SGR">Selangor</option>
+                                                <option value="SWK">Sarawak</option>
+                                                <option value="TRG">Terengganu</option>
+                                                <option value="WLY">Wilayah Persekutuan</option>
+                                            </Input>
+                                        </Col>
+                                    </FormGroup>
+                                    <FormGroup row>
                                         <Label for="area" sm={4}>Kawasan</Label>
                                         <Col sm={8}>
                                             <Input type="select" name="area" id="area">

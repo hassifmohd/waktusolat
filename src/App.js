@@ -46,7 +46,7 @@ class App extends Component {
                     <NavLink href="/">Waktu Solat</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="/settings">Settings</NavLink>
+                    <NavLink href="/settings">Tukar Kawasan</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="/aboutus">About</NavLink>
