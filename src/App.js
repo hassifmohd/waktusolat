@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 import Homepage from './views/Homepage';
 import Settings from './views/Settings';
 import AboutUs from './views/AboutUs';
-
-const About = () => (
-  <div>
-    <h2>About</h2>
-  </div>
-)
 
 class App extends Component {
 
