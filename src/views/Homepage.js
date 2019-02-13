@@ -5,7 +5,20 @@ class Homepage extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            asar: '16:37:00',
+            dhuhr: '13:18:00',
+            fajr: '05:58:00',
+            imsak: '05:48:00',
+            isha: '20:29:00',
+            maghrib: '19:18:00',
+            syuruk: '07:15:00',
+            date: '14-Feb-2019',
+            hijri: '1440-06-09',
+            area: 'Kuala Selangor',
+            areaCode: 'SGR03',
+            lastUpdate: '2019-02-14 20:00:00'
+        };
 
         this.refreshEvent = this.refreshEvent.bind(this);
     }
@@ -21,13 +34,10 @@ class Homepage extends Component {
                     <Row>
                         <Col xs="1"></Col>
                         <Col xs="10">
-                            <div className="putmiddle">
-                                <h5></h5>
-                            </div>
-
                             <div>
-                                <div>Kawasan: </div>
-                                <div>Last update: </div>
+                                <div>Tarikh: {this.state.hijri}</div>
+                                <div>Kawasan: {this.state.area}</div>
+                                <div>Last update: {this.state.lastUpdate}</div>
                             </div>
 
                             <Table striped size="sm" dark>
@@ -40,35 +50,31 @@ class Homepage extends Component {
                                 <tbody>
                                     <tr>
                                         <td>Imsak</td>
-                                        <td>6:00 AM</td>
+                                        <td>{this.state.imsak}</td>
                                     </tr>
                                     <tr>
                                         <td>Subuh</td>
-                                        <td>6:10 AM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Imsak</td>
-                                        <td>6:00 AM</td>
+                                        <td>{this.state.fajr}</td>
                                     </tr>
                                     <tr>
                                         <td>Syuruk</td>
-                                        <td>7.27 AM</td>
+                                        <td>{this.state.syuruk}</td>
                                     </tr>
                                     <tr>
                                         <td>Zohor</td>
-                                        <td>1:30 PM</td>
+                                        <td>{this.state.dhuhr}</td>
                                     </tr>
                                     <tr>
                                         <td>Asar</td>
-                                        <td>4:50 AM</td>
+                                        <td>{this.state.asar}</td>
                                     </tr>
                                     <tr>
                                         <td>Maghrib</td>
-                                        <td>7:29 PM</td>
+                                        <td>{this.state.maghrib}</td>
                                     </tr>
                                     <tr>
                                         <td>Isyak</td>
-                                        <td>8:40 PM</td>
+                                        <td>{this.state.isha}</td>
                                     </tr>
                                 </tbody>
                             </Table>
