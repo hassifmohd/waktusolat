@@ -5,7 +5,15 @@ class Settings extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            area: 'JHR01'
+        };
+
+        this.setArea = this.setArea.bind(this);
+    }
+
+    setArea = (event) => {
+        this.setState({ area: event.target.value });
     }
 
     render() {
@@ -20,9 +28,9 @@ class Settings extends Component {
                                     <FormGroup row>
                                         <Label for="area" sm={4}>Kawasan</Label>
                                         <Col sm={8}>
-                                            <Input type="select" name="area" id="area">
+                                            <Input type="select" name="area" id="area" value={this.state.area} onChange={this.setArea}>
                                                 <optgroup label="Johor">
-                                                    <option value="JHR01">Pulau Aur dan Pulau Pemanggil </option>
+                                                    <option value="JHR01">Pulau Aur dan Pulau Pemanggil</option>
                                                     <option value="JHR02">Johor Bharu, Kota Tinggi, Mersing</option>
                                                     <option value="JHR03">Kluang, Pontian</option>
                                                     <option value="JHR04">Batu Pahat, Muar, Segamat, Gemas Johor</option>
